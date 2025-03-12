@@ -28,11 +28,11 @@ def main():
 
         # After student selection, show courses
         choice2 = input(f"\n欢迎进入选课系统: 請選擇學生 1張學生 2范學生")    
-        course1 = Course('1.國文')
-        course2 = Course('2.英文')
-        course3 = Course('3.數學')
-        course4 = Course('4.自然')
-        course5 = Course('5.社會')
+        course1 = Course('國文 必修 星期一 13:10~15:00')
+        course2 = Course('英文 必修 星期二 08:10~10:00')
+        course3 = Course('數學 必修 星期三 09:10~12:00')
+        course4 = Course('自然 選修 星期四 15:10~16:00')
+        course5 = Course('社會 選修 星期五 10:10~12:00')
 
         # Display available courses
         courses = [course1, course2, course3, course4, course5]
