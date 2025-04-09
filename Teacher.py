@@ -17,6 +17,8 @@ class Teacher(Person):
         print(self.name)
 
 if __name__ == "__main__":
-    teacher1=Teacher('chris',123)
-    teacher2=Teacher('Tom',124)
-    teacher1.getName()
+    teacher1=Teacher('chris',123,'a@a.com')
+    name = teacher1.id
+    id = teacher1.getId()
+    print(name)
+    print(id)
