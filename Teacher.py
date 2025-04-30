@@ -1,24 +1,16 @@
-'''class Teacher:
+class Teacher:
     def __init__(self, name):
         self.name = name
+        self.email = ''
 
     def getName(self):
-        return self.name  # 改為返回名稱'''
+        return self.name
 
+    def setEmail(self, email):
+        if '@' in email:
+            self.email = email
+        else:
+            raise ValueError("Email格式錯誤，請包含 '@'")
 
-
-import os
-from Person import Person
-
-class Teacher(Person):
-    def __init__(self, name,id):
-        super().__init__(name,id)
-    def getName(self):
-        print(self.name)
-
-if __name__ == "__main__":
-    teacher1=Teacher('chris',123,'a@a.com')
-    name = teacher1.id
-    id = teacher1.getId()
-    print(name)
-    print(id)
+    def getEmail(self):
+        return self.email
